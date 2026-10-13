@@ -4,14 +4,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="Rubeeks — publisher of the Nomad Budget app.">
-<title>Rubeeks</title>
+<title>Rubeeks — maker of Nomad Budget</title>
+<meta name="description" content="Rubeeks is the independent studio behind Nomad Budget, the expense tracker app for digital nomads, expats and long-term travellers.">
+<link rel="canonical" href="https://rubeeks.co/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rubeeks.co/">
+<meta property="og:title" content="Rubeeks — maker of Nomad Budget">
+<meta property="og:description" content="The independent studio behind Nomad Budget, the expense tracker app for digital nomads, expats and long-term travellers.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://rubeeks.co/#org",
+      "name": "Rubeeks",
+      "url": "https://rubeeks.co/",
+      "email": "nomadbudget@rubeeks.co",
+      "founder": { "@type": "Person", "name": "Selçuk Sevindik", "sameAs": ["https://medium.com/@selcuksevindik"] }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nomadbudget.rubeeks.co/#app",
+      "name": "Nomad Budget",
+      "url": "https://nomadbudget.rubeeks.co/",
+      "description": "Expense tracker app for digital nomads, expats and long-term travellers: one wallet per country in its own currency, one total in yours, and your journey on a 3D globe.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS",
+      "publisher": { "@id": "https://rubeeks.co/#org" },
+      "sameAs": [
+        "https://apps.apple.com/app/id6803787746",
+        "https://alternativeto.net/software/nomad-budget/about/",
+        "https://www.youtube.com/@NomadBudgetInt"
+      ]
+    }
+  ]
+}
+</script>
+<!--
+  The apex site for rubeeks.co (GitHub user site, see README). Its job: say who publishes
+  Nomad Budget and point to the app's own site with a descriptive link. The app is
+  presented on nomadbudget.rubeeks.co, not here — keep this page short so the two do
+  not compete for the same searches.
+-->
 <style>
 :root {
   color-scheme: light dark;
   --bg: #F5F7FA; --surface: #FFFFFF; --surface-muted: #EEF1F6;
   --ink: #0E1726; --ink-soft: #3A4658; --muted: #6B7684;
   --border: #E7ECF2; --accent: #11371C; --lime: #52D69B;
+  --hero: linear-gradient(135deg, #0F172A 0%, #0D3330 55%, #154D43 100%);
   --shadow: 0 1px 2px rgba(12,24,36,.05), 0 18px 44px rgba(12,24,36,.07);
 }
 @media (prefers-color-scheme: dark) {
@@ -28,40 +70,70 @@ body {
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px; line-height: 1.65;
 }
-main {
-  max-width: 560px; margin: 0 auto; padding: 40px;
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: 24px; box-shadow: var(--shadow);
-}
+main { max-width: 620px; margin: 0 auto; }
+header { padding: 8px 4px 22px; }
 h1 { margin: 0 0 6px; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: var(--ink); }
-.rule { display: flex; width: 72px; height: 3px; margin: 0 0 22px; border-radius: 2px; overflow: hidden; }
+.rule { display: flex; width: 72px; height: 3px; margin: 0 0 18px; border-radius: 2px; overflow: hidden; }
 .rule i:nth-child(1) { width: 30%; background: #52D69B; }
 .rule i:nth-child(2) { width: 26%; background: #2E90FA; }
 .rule i:nth-child(3) { width: 24%; background: #EE46BC; }
 .rule i:nth-child(4) { width: 20%; background: #F79009; }
-p { margin: 0 0 16px; }
+p { margin: 0 0 14px; }
 a { color: var(--accent); text-underline-offset: 2px; }
-.row {
-  display: block; margin-top: 22px; padding: 16px 20px; text-decoration: none;
-  background: var(--surface-muted); border: 1px solid var(--border); border-radius: 18px;
-}
-.row:hover { border-color: var(--lime); }
-.row .t { display: block; font-weight: 600; color: var(--ink); }
-.row .s { display: block; margin-top: 2px; font-size: 14px; color: var(--muted); }
-footer { max-width: 560px; margin: 22px auto 0; font-size: 13px; color: var(--muted); text-align: center; }
+.app { background: var(--hero); color: #EFF7F1; border-radius: 24px; padding: 28px; box-shadow: var(--shadow); }
+.app-head { display: flex; gap: 16px; align-items: center; margin-bottom: 16px; }
+.app-head img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+.app h2 { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.3px; color: #fff; }
+.app .kicker { display: block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #52D69B; }
+.app p { color: #C9DDD0; }
+.app ul { margin: 0 0 20px; padding-left: 20px; color: #C9DDD0; }
+.app li { margin: 0 0 6px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 12px 18px; border-radius: 14px; font-weight: 700; text-decoration: none; }
+.btn.primary { background: #52D69B; color: #11371C; }
+.btn.ghost { border: 1px solid rgba(172,209,183,.4); color: #EFF7F1; }
+.btn:hover { filter: brightness(1.05); }
+.more { margin-top: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 6px 20px; box-shadow: var(--shadow); }
+.more a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 0; text-decoration: none; color: var(--ink); border-top: 1px solid var(--border); }
+.more a:first-child { border-top: 0; }
+.more span { color: var(--muted); font-size: 14px; }
+footer { max-width: 620px; margin: 22px auto 0; font-size: 13px; color: var(--muted); text-align: center; }
 </style>
 </head>
 <body>
   <main>
-    <h1>Rubeeks</h1>
-    <div class="rule"><i></i><i></i><i></i><i></i></div>
-    <p>Publisher of <strong>Nomad Budget</strong>, a budgeting app for people who live across currencies and countries.</p>
-    <p lang="tr">Para birimleri ve ülkeler arasında yaşayanlar için bütçe uygulaması <strong>Nomad Budget</strong>'in yayıncısı.</p>
-    <a class="row" href="/NomadBudgetLegal/">
-      <span class="t">Nomad Budget — Legal Documents</span>
-      <span class="s">Terms, privacy policy, KVKK notice, disclaimer and licences · TR / EN</span>
-    </a>
+    <header>
+      <h1>Rubeeks</h1>
+      <div class="rule"><i></i><i></i><i></i><i></i></div>
+      <p>An independent studio making software for people whose lives cross borders.</p>
+      <p lang="tr">Hayatı sınırların ötesine taşan insanlar için yazılım geliştiren bağımsız bir stüdyo.</p>
+    </header>
+
+    <section class="app" aria-labelledby="nb">
+      <div class="app-head">
+        <img src="https://czgrnmolqcbgvoctqpwp.supabase.co/storage/v1/object/public/brand/coin.png" alt="" width="64" height="64">
+        <div><span class="kicker">Our app</span><h2 id="nb">Nomad Budget</h2></div>
+      </div>
+      <p>Nomad Budget is an expense tracker app for digital nomads, expats and long-term travellers: one wallet per country in its own currency, one total in yours, and your journey on a 3D globe.</p>
+      <ul>
+        <li>A wallet for every country, each in its own currency, and one total in the currency you choose</li>
+        <li>Autopilot turns Apple Pay payments and bank texts into drafts you confirm with one tap</li>
+        <li>Your route on a spinning globe, and what each country actually cost you</li>
+        <li>Compare your own spending pattern in another country before you move</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="https://nomadbudget.rubeeks.co/">Visit the Nomad Budget website</a>
+        <a class="btn ghost" href="https://apps.apple.com/app/id6803787746">App Store</a>
+      </div>
+    </section>
+
+    <nav class="more" aria-label="Nomad Budget">
+      <a href="https://nomadbudget.rubeeks.co/blog/">Nomad Budget blog <span>money across borders, fees, geo-arbitrage</span></a>
+      <a href="https://nomadbudget.rubeeks.co/alternatives/">Travel budget app comparisons <span>Trail Wallet, TravelSpend, Tripcoin…</span></a>
+      <a href="https://nomadbudget.rubeeks.co/tr/">Nomad Budget Türkçe <span>dijital göçebeler için harcama takibi</span></a>
+      <a href="https://legal.rubeeks.co/nomadbudget/">Legal documents <span>terms, privacy, KVKK · TR / EN</span></a>
+    </nav>
   </main>
-  <footer><a href="mailto:nomadbudget@rubeeks.co">nomadbudget@rubeeks.co</a></footer>
+  <footer>Rubeeks · <a href="mailto:nomadbudget@rubeeks.co">nomadbudget@rubeeks.co</a></footer>
 </body>
 </html>
