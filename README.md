@@ -6,3 +6,7 @@ appear under `rubeeks.co/<repo>` — `rubeeks.co/NomadBudgetLegal` among them).
 
 `CNAME` holds the custom domain. Do not delete it: without it the domain falls
 back to `selocantr.github.io` and every project site's URL moves with it.
+
+## Apps
+
+- **[Nomad Budget](https://nomadbudget.rubeeks.co/)** - Expense tracker for digital nomads, expats, and long-term travellers ([Türkçe](https://nomadbudget.rubeeks.co/tr/) · [Blog](https://nomadbudget.rubeeks.co/blog/) · [Comparisons](https://nomadbudget.rubeeks.co/alternatives/) · [Legal](https://nomadbudget.rubeeks.co/legal/))
