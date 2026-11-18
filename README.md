@@ -9,4 +9,4 @@ back to `selocantr.github.io` and every project site's URL moves with it.
 
 ## Apps
 
-- **[Nomad Budget](https://nomadbudget.rubeeks.co/)** - Expense tracker for digital nomads, expats, and long-term travellers ([Türkçe](https://nomadbudget.rubeeks.co/tr/) · [Blog](https://nomadbudget.rubeeks.co/blog/) · [Comparisons](https://nomadbudget.rubeeks.co/alternatives/) · [Legal](https://nomadbudget.rubeeks.co/legal/))
+- **[Nomad Budget](https://nomadbudgetapp.com/)** - Expense tracker for digital nomads, expats, and long-term travellers ([Türkçe](https://nomadbudgetapp.com/tr/) · [Blog](https://nomadbudgetapp.com/blog/) · [Comparisons](https://nomadbudgetapp.com/alternatives/) · [Legal](https://nomadbudgetapp.com/legal/))
